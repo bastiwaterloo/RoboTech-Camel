@@ -1,4 +1,10 @@
-package edu.thi.demo.pda.integration;
+/*
+ * 
+ * Klasse erstellt von: Lukas Keﬂler
+ * 
+ */
+
+package edu.thi.demo.auftragsaggregator;
 
 import javax.jms.ConnectionFactory;
 
