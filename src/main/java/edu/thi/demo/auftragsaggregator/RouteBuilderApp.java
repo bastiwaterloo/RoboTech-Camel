@@ -1,4 +1,10 @@
-package edu.thi.demo.pda.integration;
+/*
+ * 
+ * Klasse erstellt von: Lukas Keﬂler
+ * 
+ */
+
+package edu.thi.demo.auftragsaggregator;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.XmlJsonDataFormat;
@@ -16,7 +22,7 @@ public class RouteBuilderApp extends RouteBuilder {
     public void configure() throws Exception {
         XmlJsonDataFormat xmlJsonFormat = new XmlJsonDataFormat();
         xmlJsonFormat.setEncoding("UTF-8");
-        xmlJsonFormat.setRootName("item");
+        xmlJsonFormat.setRootName("auftraege");
 
         // Input-Format: JSON
         // Target-Format: XML
