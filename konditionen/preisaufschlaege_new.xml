@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<preisaufschlaege>
+    <messageName>aktuelleKonditionenMsg</messageName>
+    <processInstanceId>820c5c3d-775b-11ec-b8bd-261b7a4510c9</processInstanceId>
+    <processVariables>
+        <spezialdesign><value>15</value><type>String</type></spezialdesign>
+        <erhoehterFertigungsaufwand><value>10</value><type>String</type></erhoehterFertigungsaufwand>
+        <lautstaerkereduzierung><value>18</value><type>String</type></lautstaerkereduzierung>
+        <leichtbauweise><value>35</value><type>String</type></leichtbauweise>
+        <sonderzuschlag><value>15</value><type>String</type></sonderzuschlag>
+    </processVariables>
+</preisaufschlaege>

@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <preisaufschlaege>
-    <kondition>
+    <kondition1>
         <art>spezialdesign</art>
         <aufschlag>15</aufschlag>
-    </kondition>
-    <kondition>
+    </kondition1>
+    <kondition2>
         <art>erhoehterFertigungsaufwand</art>
         <aufschlag>10</aufschlag>
-    </kondition>
-    <kondition>
+    </kondition2>
+    <kondition3>
         <art>lautstaerkereduzierung</art>
         <aufschlag>18</aufschlag>
-    </kondition>
-    <kondition>
+    </kondition3>
+    <kondition4>
         <art>leichtbauweise</art>
         <aufschlag>35</aufschlag>
-    </kondition>
-    <kondition>
+    </kondition4>
+    <kondition5>
         <art>sonderzuschlag</art>
         <aufschlag>15</aufschlag>
-    </kondition>
+    </kondition5>
 </preisaufschlaege>

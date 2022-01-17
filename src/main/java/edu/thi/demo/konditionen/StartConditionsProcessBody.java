@@ -11,11 +11,14 @@ public class StartConditionsProcessBody implements Processor{
         // TODO Auto-generated method stub
         exchange.getOut().setHeader(Exchange.HTTP_METHOD, "POST");
         exchange.getOut().setHeader(Exchange.CONTENT_TYPE, "application/json");
-        exchange.getOut()
-        .setBody("{\r\n"
-        		+ "  \"messageName\" : \"aktuelleKonditionenMsg\",\r\n"
-        		+ "  \"processInstanceId\" : \"fa785387-76f4-11ec-b06a-2c56dcf95b9e\"\r\n"
-        		+ "}");
+        Object payload = exchange.getIn().getBody(Object.class);
+//        exchange.getOut()
+//        .setBody("{\r\n"
+//        		+ "  \"messageName\" : \"aktuelleKonditionenMsg\",\r\n"
+//        		+ "  \"processInstanceId\" : \"69600847-7746-11ec-b8bd-261b7a4510c9\"\r\n"
+//        		+ "}");
+        exchange.getOut().setBody(payload);
+        System.out.println(payload);
     System.out.println(exchange.toString());
     }
 }

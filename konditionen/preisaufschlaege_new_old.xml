@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<preisaufschlaege>
+    <messageName>aktuelleKonditionenMsg</messageName>
+    <processInstanceId>3cb6f77b-7752-11ec-b8bd-261b7a4510c9</processInstanceId>
+    <fetteVariable><preisaufschlaegeMap>
+        <type>Object</type>
+        <value>"{"art":"spezialdesign","aufschlag":"15"}"</value>
+        <valueInfo>
+            <objectTypeName>java.util.TreeMap&lt;java.lang.Object,java.lang.Object&gt;</objectTypeName>
+            <serializationDataFormat>application/json</serializationDataFormat>
+        </valueInfo>
+    </preisaufschlaegeMap></fetteVariable>
+</preisaufschlaege>
