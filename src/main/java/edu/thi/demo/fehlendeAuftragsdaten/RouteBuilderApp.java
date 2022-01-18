@@ -22,14 +22,14 @@ public class RouteBuilderApp extends RouteBuilder {
     public void configure() throws Exception {
         XmlJsonDataFormat xmlJsonFormat = new XmlJsonDataFormat();
         xmlJsonFormat.setEncoding("UTF-8");
-        xmlJsonFormat.setRootName("fehlendeAuftragsdaten");
+        xmlJsonFormat.setRootName("missingDetails");
 
         // Input-Format: JSON
         // Target-Format: XML
         
         from("jms:queue:FehlendeAuftragsdatenQueue")
-            .log("Fehlende Auftragsdaten für den Auftrag #ID# ablegen.") //TODO ID dynamisch anlegen
+            .log("Fehlende Auftragsdaten \n${body}") //TODO ID dynamisch anlegen
             .unmarshal(xmlJsonFormat)
-            .to("file:fehlendeAuftragsdaten?fileName=order.xml"); //TODO Dateiname dynamisch anlegen
+            .to("file:fehlendeAuftragsdaten?fileName=missingOrderDetails.xml"); //TODO Dateiname dynamisch anlegen
     }
 }
