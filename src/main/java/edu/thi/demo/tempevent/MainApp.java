@@ -1,4 +1,4 @@
-package edu.thi.demo.konditionen;
+package edu.thi.demo.tempevent;
 
 import javax.jms.ConnectionFactory;
 
@@ -10,9 +10,7 @@ import org.apache.camel.impl.SimpleRegistry;
 
 
 
-
-
-public class MainAppConditions {
+public class MainApp {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
@@ -25,7 +23,7 @@ public class MainAppConditions {
         
         try {
             // Add Routes
-            context.addRoutes(new StartConditionsProcess());
+            context.addRoutes(new StartFuelAlertProcess());
             
             // Starts context in new thread
             context.start();

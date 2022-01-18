@@ -1,23 +1,15 @@
+package edu.thi.demo.zusage;
 /*
  * 
- * Klasse erstellt von: Lukas Keßler
+ * @Author Sebastian Waterloo
  * 
  */
-
-package edu.thi.demo.zusage;
-
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.XmlJsonDataFormat;
 
 public class RouteBuilderApp extends RouteBuilder {
-
-	/*
-	 * Idee für das Dateisystem:
-	 * Alle Auftraege in XML konvertieren und an eines von 3 Arbeitsteams schicken
-	 * Jedes Arbeitsteam ist für bestimmte Robotertypen verantwortlich, d.h. der
-	 * Robotertyp ist das Hauptkriterium für die Sortierung
-	 */
 	
+	//Get accepted orders from queue and save to filesystem
     @Override
     public void configure() throws Exception {
         XmlJsonDataFormat xmlJsonFormat = new XmlJsonDataFormat();

@@ -1,11 +1,9 @@
+package edu.thi.demo.enqueueConditions;
 /*
  * 
- * Klasse erstellt von: Lukas Keﬂler
+ * @Author Dominik Knauer
  * 
  */
-
-package edu.thi.demo.enqueueConditions;
-
 import javax.jms.ConnectionFactory;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
@@ -25,7 +23,6 @@ public class MainApp {
     }
     
     public void boot() throws Exception {
-        // create a LocationValidator instance
         main = new Main();
         
         //configure jms component        
