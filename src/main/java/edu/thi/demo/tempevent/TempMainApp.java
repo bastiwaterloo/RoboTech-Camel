@@ -8,7 +8,7 @@ import org.apache.camel.component.jms.JmsComponent;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.apache.camel.impl.SimpleRegistry;
 
-import edu.thi.demo.tempevent.StartTempAlertProcess;
+
 
 public class TempMainApp {
 

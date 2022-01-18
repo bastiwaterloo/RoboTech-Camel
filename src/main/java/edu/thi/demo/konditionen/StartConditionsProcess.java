@@ -8,6 +8,7 @@ public class StartConditionsProcess extends RouteBuilder{
 		   System.out.println("trying to send message ......");
 	        from("jms:queue:konditionenQueue")
 	        .process(new StartConditionsProcessBody())
+	        .to("file:kondition_json?fileName=preisaufschlaege_last_queue.json")
 	        .to("http://localhost:8080/engine-rest/message");
 	    }
 }

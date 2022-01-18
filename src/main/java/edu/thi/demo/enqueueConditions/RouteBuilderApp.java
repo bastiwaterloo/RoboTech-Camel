@@ -1,6 +1,6 @@
 /*
  * 
- * Klasse erstellt von: Lukas Keßler
+ * Klasse erstellt von: Lukas Keï¿½ler
  * 
  */
 
@@ -22,9 +22,18 @@ public class RouteBuilderApp extends RouteBuilder {
         // Input-Format: XML
         // Ziel-Format: JSON
         
+        
+        //prepare conditions file
+        
+        
+        
+        
+        
+        
         from("file:konditionen?fileName=preisaufschlaege.xml&noop=true")
             .log("Push conditions to queue") //TODO ID dynamisch anlegen
             .marshal().xmljson()
+            .to("file:kondition_json?fileName=preisaufschlaege.json")
             .to("jms:queue:konditionenQueue"); //TODO Dateiname dynamisch anlegen
     }
 }

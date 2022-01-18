@@ -1,23 +1,12 @@
 <?xml version="1.0"?>
 <preisaufschlaege>
-    <kondition>
-        <art>spezialdesign</art>
-        <aufschlag>15</aufschlag>
-    </kondition>
-    <kondition>
-        <art>erhoehterFertigungsaufwand</art>
-        <aufschlag>10</aufschlag>
-    </kondition>
-    <kondition>
-        <art>lautstaerkereduzierung</art>
-        <aufschlag>18</aufschlag>
-    </kondition>
-    <kondition>
-        <art>leichtbauweise</art>
-        <aufschlag>35</aufschlag>
-    </kondition>
-    <kondition>
-        <art>sonderzuschlag</art>
-        <aufschlag>15</aufschlag>
-    </kondition>
+    <messageName>aktuelleKonditionenMsg</messageName>
+    <processInstanceId>6521650d-77eb-11ec-9b7a-2c56dcf95b9e</processInstanceId>
+    <processVariables>
+        <spezialdesign><value>15</value><type>String</type></spezialdesign>
+        <erhoehterFertigungsaufwand><value>10</value><type>String</type></erhoehterFertigungsaufwand>
+        <lautstaerkereduzierung><value>18</value><type>String</type></lautstaerkereduzierung>
+        <leichtbauweise><value>35</value><type>String</type></leichtbauweise>
+        <sonderzuschlag><value>15</value><type>String</type></sonderzuschlag>
+    </processVariables>
 </preisaufschlaege>

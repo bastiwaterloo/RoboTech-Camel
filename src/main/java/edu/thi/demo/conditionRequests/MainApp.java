@@ -4,7 +4,7 @@
  * 
  */
 
-package edu.thi.demo.auftragsaggregator;
+package edu.thi.demo.conditionRequests;
 
 import javax.jms.ConnectionFactory;
 

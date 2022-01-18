@@ -25,7 +25,7 @@ public class MainApp {
     }
     
     public void boot() throws Exception {
-        // create a Main instance
+        // create a LocationValidator instance
         main = new Main();
         
         //configure jms component        
